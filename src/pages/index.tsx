@@ -133,10 +133,6 @@ export default function Home({ playAmericano, playDetora, featuredProduct }: Hom
                 </div>
               )
             })}
-
-
-
-
           </div>
         </div>
 
