@@ -147,7 +147,7 @@ export default function Home({ playAmericano, playDetora, featuredProduct }: Hom
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { data } = await api.get('/hello', {
+  const { data } = await api.get('hello', {
     params: {
       _limit: 12,
       _sort: 'published_at',
