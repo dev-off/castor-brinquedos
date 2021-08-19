@@ -4,7 +4,7 @@ import { Banner } from '../components/Banner';
 import styles from '../styles/Home.module.scss';
 import api from '../services/api';
 import { useEffect } from 'react';
-import { GetServerSideProps, GetStaticProps } from 'next';
+import { GetStaticProps } from 'next';
 import { Footer } from '../components/Footer';
 
 type Data = {
@@ -142,7 +142,7 @@ export default function Home({ playAmericano, playDetora, featuredProduct }: Hom
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const { data } = await api.get('hello', {
     params: {
       _limit: 12,
@@ -171,6 +171,6 @@ export const getServerSideProps: GetServerSideProps = async () => {
       playDetora,
       featuredProduct
     },
-    // revalidate: 60 * 60 * 8,
+    revalidate: 60 * 60 * 8,
   }
 }
