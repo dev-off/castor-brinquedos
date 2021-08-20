@@ -24,6 +24,7 @@ type HomeProps = {
 
 export default function Home({ playAmericano, playDetora, featuredProduct }: HomeProps) {
   const destaque = featuredProduct[0];
+  let desconto = destaque.price - 600;
   return (
     <div>
       <Banner />
@@ -67,8 +68,8 @@ export default function Home({ playAmericano, playDetora, featuredProduct }: Hom
             </div>
             <div className={styles.productInfo}>
               <h1>{featuredProduct[0].name}</h1>
-              <span> de R${destaque.price}</span>
-              <p> por <strong>R${destaque.price - 600}</strong></p>
+              <span> de R${destaque.price.toLocaleString('pt-br', {minimumFractionDigits: 2})}</span>
+              <p> por <strong>R${desconto.toLocaleString('pt-br', {minimumFractionDigits: 2})}</strong></p>
               <ul>
                 <li>11 brinquedos</li>
                 <li>2 anos de garantia <small>* Consulte condições</small> </li>
@@ -97,7 +98,7 @@ export default function Home({ playAmericano, playDetora, featuredProduct }: Hom
                   </div>
                   <div className={styles.productInfo}>
                     <p>{content.name}</p>
-                    <span>R$ {content.price}</span>
+                    <span>R$ {content.price.toLocaleString('pt-br', {minimumFractionDigits: 2})}</span>
                     <button>Colocar no carrinho</button>
                   </div>
                 </div>
@@ -127,7 +128,7 @@ export default function Home({ playAmericano, playDetora, featuredProduct }: Hom
                   </div>
                   <div className={styles.productInfo}>
                     <p>{content.name}</p>
-                    <span>R$ {content.price}</span>
+                    <span>R$ {content.price.toLocaleString('pt-br', {minimumFractionDigits: 2})}</span>
                     <button>Colocar no carrinho</button>
                   </div>
                 </div>
