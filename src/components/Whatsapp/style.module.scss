@@ -1,0 +1,27 @@
+.container{
+   width: auto;
+   height: auto;
+    position: fixed;
+    top: 80%;
+    right: 10px;
+    z-index: 9;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    &::before{
+        content: '';
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        background-color: green;
+        z-index: -1;
+    }
+    svg{
+       
+    }
+}
