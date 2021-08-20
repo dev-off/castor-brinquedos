@@ -81,7 +81,7 @@ export default function handler(
     },
     {
       id: 9,
-      name: "Playgrond Colorido",
+      name: "PlayGround Colorido",
       price: 6600,
       main_image: "/play/play-colorido.jpg",
       description: " Descrição em desenvolvimento",

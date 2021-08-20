@@ -10,7 +10,7 @@ export const Banner = () => {
         >
             <div className={style.popUp}>
                 <small>Diga Olá para a Castor Brinquedos!</small>
-                <h2> Fabricamos e instalamos <br /> PlayGround de madeira</h2>
+                <h2>Fabricação e instalação <br /> de playground de madeira.</h2>
                 <button>Abrir catálogo</button>
 
             </div>

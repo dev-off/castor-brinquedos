@@ -138,8 +138,12 @@
     }
     .container_featured{
       display: flex;
+      flex-direction: column;
+      @media(min-width:600px){
+        flex-direction: row;
+        .productInfo{padding-left: 30px;}
+      }
       .productInfo{
-        padding: 30px;
         h1{
           font-size: 2rem;
           margin-bottom: 1rem;
@@ -159,6 +163,7 @@
           margin-left: 20px;
           li{
             color: var(--dark-grey);
+            font-family: var(--primary-text);
           }
         }
         button{
