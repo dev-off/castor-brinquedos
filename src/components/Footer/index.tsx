@@ -86,7 +86,6 @@ export const Footer = () => {
                <h5>Atendimento</h5>
 
                <p>19 98919-1570 (whatsapp)</p>
-               <p>19 99218-3649</p>
                <p>segunda - sexta 09:00 as 18:00</p>
                <span>contato@castorbrinquedos.com.br</span>
             </div>
