@@ -46,7 +46,7 @@ export const Footer = () => {
                </ul>
             </div>
             <div>
-               <h5>Informações uis</h5>
+               <h5>Informações úteis</h5>
                <ul>
 
                   <li>
@@ -102,7 +102,7 @@ export const Footer = () => {
             </div>
             <div>
                <h5>Endereço</h5>
-               <p>Rua Antonio fonsechi, 391 Satelite ires 2 Campinas.</p>
+               <p>Rua Antônio fonsechi, 391 Satélite ires 2 Campinas - SP.</p>
                <p>CEP: 13059643</p>
                <p>segunda - sexta 09:00 as 18:00</p>
                <span>contato@castorbrinquedos.com.br</span>
@@ -112,7 +112,7 @@ export const Footer = () => {
                <h5>Formas de pagamento</h5>
                <p>Crédito </p>
                <p>Débito</p>
-               <p>Boleto Bancario</p>
+               <p>Boleto Bancário</p>
                <p>Deposito em conta / pix</p>
 
             </div>
@@ -128,7 +128,7 @@ export const Footer = () => {
             </div>
             <div>
                <h5>NEWSLETTER</h5>
-               <p>Inscrevase para receber promoções esclusivas.</p>
+               <p>Inscreva-se para receber promoções exclusiva.</p>
                <form >
                   <input
                      type="text"
