@@ -28,7 +28,6 @@ export default function Home({ playAmericano, playDetora, featuredProduct }: Hom
   return (
     <div>
       <Banner />
-     
         <h3 className={styles.title_service}>Serviços</h3>
      
       <section className={styles.services}>
@@ -89,10 +88,12 @@ export default function Home({ playAmericano, playDetora, featuredProduct }: Hom
               return (
                 <div key={content.id} className={styles.card}>
                   <div className={styles.imgProduct}>
+                    
                     <Image
                       src={content.main_image}
                       width='300px'
                       height='250px'
+                      className={styles.img}
 
                     />
                   </div>
